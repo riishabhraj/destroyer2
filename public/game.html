@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="./stylesheets/modal.css" />
         <link rel="stylesheet" href="./stylesheets/game.css" />
         <link rel="stylesheet" href="./stylesheets/loader.css" />
+        <link rel="stylesheet" href="./stylesheets/loader.css" />
     </head>
 
     <body>
@@ -69,7 +70,6 @@
                 <a href="./about.html">About</a> |
                 <a href="./rooms.html">Rooms</a>
             </p>
-            <p>&lt;/&gt; with &hearts; by Ulysse McConnell</p>
         </footer>
         <script type="module">
             import { wait, redirect } from "./javascripts/utils.js";
@@ -96,7 +96,7 @@
             const room = (/r=([^&]*)/g.exec(location.search) || [])[1];
             window.room = room;
 
-            let main = document.getElementById("main"),
+            // let main = document.getElementById("main"),
                 placeships = document.getElementById("placeships"),
                 setupBtn = document.getElementById("setup"),
                 placeRandomlyBtn = document.getElementById("placeRandomlyBtn");
